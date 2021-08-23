@@ -54,6 +54,7 @@
 	<ul>
 		{#if $session.token}
 			<li><a aria-current="{segment === 'overview' ? 'page' : undefined}" href="overview">overview</a></li>
+			<li><a aria-current="{segment === 'transactions' ? 'page' : undefined}" href="transactions">transactions</a></li>		
 			<li><a aria-current="{segment === 'logout' ? 'page' : undefined}" href="{logout}"
 				   on:click|preventDefault={logout}>log out</a></li>
 		{:else}
